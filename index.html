@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="bg-dark text-white">
+    
+    <header class="navbar navbar-expand-lg sticky-top " id="header">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Cyber<span>City</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link active" href="#sobre">
+                            <i class="bi bi-buildings"></i>
+                            Sobre a cidade</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#regioes">
+                            <i class="bi bi-diamond-half"></i>
+                            Regiões</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#propriedades">
+                            <i class="bi bi-house-door"></i>
+                            Propriedades</a>
+                    </li>
+                    <li class="nav-item fw-bold me-4">
+                        <a class="nav-link" href="#contato">
+                            <i class="bi bi-chat-left-text"></i>
+                            Fale conosco</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <div class="dropdown" id="dropdownMenu">
+                            <button id="dropdownMenuButton" data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">
+                                Log In
+                                <span class="dropdown-toggle-icon"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li class="dropdown-item">
+                                    <a href="#">Log in usuário</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">Log in funcionario</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="header" data-bs-smooth-scroll="true">
+        <section>
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/slides/slide1.jpg" alt="slide 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide2.jpg" alt="slide 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/slides/slide3.jpg" alt="slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section id="sobre" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./images/cidade.webp" class="d-block w-100 rounded mb-2" alt="Foto espaço interno do restaurante">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="section-title">Sobre <span>a cidade</span></h2>
+                        <p>Em <span>CyberCity</span>, o futuro se desdobra diante de seus olhos, onde a inovação se torna vida e o extraordinário é a norma. Prepare-se para uma viagem através das paisagens urbanas mais vanguardistas que a humanidade já testemunhou.</p>
+                        <h3 class="section-title"><span>Uma cidade do </span>amanhã</h3>
+                        <p>Localizada em uma ilha flutuante no coração de um oceano cintilante, CyberCity é uma <span>cidade do futuro</span> concebida para elevar o potencial humano. Com suas torres imponentes e arquitetura inovadora, esta metrópole redefine a estética urbana.</p>
+                        <ul>
+                            <li>Transporte do Futuro</li>
+                            <li>Conectividade Inigualável</li>
+                            <li>Diferente de tudo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="regioes" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Conheça as <span>Regiões</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./images/regioes/centro.png" alt="Região central da cidade">
+                        <h3 class="section-title">
+                            <i class="bi bi-bezier"></i>
+                            Centro
+                        </h3>
+                        <p>Um verdadeiro exemplo de design futurista e eficiência urbana. Dominado por arranha-céus que se erguem em direção aos céus, este é o epicentro da inovação e da atividade.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./images/regioes/sul.png" alt="Região sul da cidade">
+                        <h3 class="section-title">
+                            <span><i class="bi bi-lightning-charge"></i>
+                            Sul</span>
+                        </h3>
+                        <p>Motor de progresso e inovação, onde a cidade encontra seu pulso industrial. Aqui, vastos complexos industriais se estendem por quilômetros, testemunhando a excelência na produção avançada.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./images/regioes/norte.png" alt="Região norte da cidade">
+                        <h3 class="section-title">
+                            <i class="bi bi-airplane"></i>
+                            Norte
+                        </h3>
+                        <p>Um refúgio espetacular para os amantes do lazer e da natureza, onde a cidade encontra seu escape sereno e cênico. Aqui, uma paisagem de tirar o fôlego se desdobra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="propriedades">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5"><span>Propriedades</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3 col-lg-2">
+                        <nav class="nav nav-pills flex-column nav-propriedades">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#casas" class="fw-bold text-start nav-link active">Casas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#apartamentos" class="fw-bold text-start nav-link">Apartamentos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#escritorios" class="fw-bold text-start nav-link">Escritórios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#veiculos" class="fw-bold text-start nav-link">Veículos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9 col-lg-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="casas">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa1.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold">Casa modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa2.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold"><span>Casa modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa1.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold">Casa modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa2.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold"><span>Casa modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa1.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold">Casa modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa2.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold"><span>Casa modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa1.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold">Casa modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/casas/casa2.png" alt="Modelo casa 1">
+                                        <h5 class="fw-bold"><span>Casa modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="apartamentos">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/apartamentos/ap1.png" alt="Apartamento modelo 1">
+                                        <h5 class="fw-bold">Apartamento modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/apartamentos/ap2.png" alt="Apartamento modelo 2">
+                                        <h5 class="fw-bold mt-2"><span>Apartamento modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/apartamentos/ap1.png" alt="Apartamento modelo 1">
+                                        <h5 class="fw-bold">Apartamento modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/apartamentos/ap2.png" alt="Apartamento modelo 2">
+                                        <h5 class="fw-bold mt-2"><span>Apartamento modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/apartamentos/ap2.png" alt="Apartamento modelo 2">
+                                        <h5 class="fw-bold mt-2"><span>Apartamento modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="escritorios">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio1.png" alt="Escritório modelo 1">
+                                        <h5 class="fw-bold">Escritório modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio2.png" alt="Escritório modelo 2">
+                                        <h5 class="fw-bold"><span>Escritório modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio1.png" alt="Escritório modelo 1">
+                                        <h5 class="fw-bold">Escritório modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio2.png" alt="Escritório modelo 2">
+                                        <h5 class="fw-bold"><span>Escritório modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio1.png" alt="Escritório modelo 1">
+                                        <h5 class="fw-bold">Escritório modelo 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/escritorios/escritorio2.png" alt="Escritório modelo 2">
+                                        <h5 class="fw-bold"><span>Escritório modelo 2</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="veiculos">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo1.png" alt="Veículo modelo 1">
+                                        <h5 class="fw-bold"><span>Veículo modelo 1</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo2.png" alt="Veículo modelo 2">
+                                        <h5 class="fw-bold">Veículo modelo 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo1.png" alt="Veículo modelo 1">
+                                        <h5 class="fw-bold"><span>Veículo modelo 1</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo2.png" alt="Veículo modelo 2">
+                                        <h5 class="fw-bold">Veículo modelo 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div><div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo1.png" alt="Veículo modelo 1">
+                                        <h5 class="fw-bold"><span>Veículo modelo 1</span></h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <img class="d-block rounded w-100" src="./images/propriedades/veiculos/veiculo2.png" alt="Veículo modelo 2">
+                                        <h5 class="fw-bold">Veículo modelo 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+
+        <section id="contato">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <h2 class="section-title">Fale <span>conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu Nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold">Seu telefone (opcional)</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea name="mensagem" id="mensagem" class="form-control"></textarea >
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4"><span>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</span></h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço administrativo
+                            </h3>
+                            <p>
+                                Rua teste exemplo n 123, bairro SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+	<script src="./js/main.js"></script>
+
+
+</body>
+</html>
